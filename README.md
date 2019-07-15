@@ -5,7 +5,7 @@
 ## usersテーブル
 | Column | Type | Options |
 | ------ | ---- | ------- |
-| username | string | null :false |
+| name | string | null :false |
 | email | string | null :false |
 | password | string | null :false |
 
@@ -19,8 +19,7 @@
 ## groupsテーブル
 | Column | Type | Options |
 | ------ | ---- | ------- |
-| groupname | string | null :false |
-| user_id | integer | null :false, foreign_key: true |
+| name | string | null :false |
 
 ### Assoiation
 - has_many :users, through: :members
@@ -31,8 +30,8 @@
 ## membersテーブル
 | Column | Type | Options |
 | ------ | ---- | ------- |
-| user_id | integer | null: false, foreign_key: true |
-| group_id | integer | null: false, foreign_key: true |
+| user | references | null: false, foreign_key: true |
+| group | references | null: false, foreign_key: true |
 
 ### Assoiation
 - belongs_to :group
@@ -41,10 +40,10 @@
 ## messagesテーブル
 | Column | Type | Options |
 | ------ | ---- | ------- |
-| body | text | null: false |
-| image | string | null: false |
-| user_id | integer | null: false, foreign_key: true |
-| group_id | integer | null: false, foreign_key: true |
+| body | text | |
+| image | string | |
+| user | references | null: false, foreign_key: true |
+| group | references | null: false, foreign_key: true |
 
 ### Assoiation
 - belongs_to :user
