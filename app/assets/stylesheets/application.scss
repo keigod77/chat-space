@@ -20,13 +20,13 @@
       display: flex;
       align-items: center;
       padding: 0 20px;
-      .side-header__box {
+      &__box {
         display: flex;
         justify-content: space-between;
         width: 100%;
         font-weight: bold;
         font-size: 16px;
-        .side-header__box__menu{
+        &__menu{
           display: flex;
           .white-color {
             color: white;
@@ -44,11 +44,11 @@
         text-decoration: none;
         .group {
           margin-bottom: 40px;
-          .group__group-name {
+          &__group-name {
             font-size: 15px;
             margin-bottom: 5px;
           }
-          .group__latest-message {
+          &__latest-message {
             font-size: 11px;
           }
         }
@@ -65,14 +65,14 @@
       display: flex;
       justify-content: space-between;
       border-bottom: solid 1px #eeeeee;
-      .main-header__left-box {
+      &__left-box {
         margin-top: 35px;
-        .main-header__left-box__current-group {
+        &__current-group {
           font-size: 20px;
           color: #333;
           margin-bottom: 15px;
         }
-        .main-header__left-box__member-list {
+        &__member-list {
           display: flex;
           font-size: 12px;
           color: #999;
@@ -81,7 +81,7 @@
       a {
         color: skyblue;
         text-decoration: none;
-        .main-header__edit-btn {
+        &__edit-btn {
           height: 40px;
           line-height: 40px;
           padding: 0 20px;
@@ -96,21 +96,21 @@
       padding: 46px 40px;
       background-color: #fafafa;
       .message {
-        .message__upper-info {
+        &__upper-info {
           display: flex;
           margin-bottom: 10px;
-          .message__upper-info__talker {
+          &__talker {
             color: $left-string-color;
             font-weight: bold;
             font-size: 16px;
           }
-          .message__upper-info__date {
+          &__date {
             color: #999;
             font-size: 12px;
             margin-left: 10px;
           }
         }
-        .message__text {
+        &__text {
           font-size: 14px;
           color: $left-string-color;
           padding-bottom: 40px;
@@ -129,7 +129,7 @@
         .input-box {
           position: relative;
           width: 100%;
-          .input-box__text {
+          &__text {
             height: 50px;
             width: 100%;
             &::placeholder {
@@ -138,7 +138,7 @@
               padding-left: 10px;
             }
           }
-          .input-box__image {
+          &__image {
             font-size: 1.3rem;
             position: absolute;
             top: 0px;
