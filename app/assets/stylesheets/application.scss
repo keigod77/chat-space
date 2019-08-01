@@ -1,6 +1,9 @@
 @import "./variable";
 @import "./reset";
 @import "font-awesome";
+@import "./user.scss";
+@import "config/colors";
+@import "modules/flash";
 .flash-box {
   color: white;
   text-align: center;
