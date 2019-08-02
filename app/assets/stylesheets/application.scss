@@ -4,6 +4,7 @@
 @import "./user.scss";
 @import "config/colors";
 @import "modules/flash";
+@import "modules/group.scss";
 .flash-box {
   color: white;
   text-align: center;
@@ -42,18 +43,18 @@
       height: calc(100vh - 100px);
       background-color: #2f3e51;
       padding: 20px 20px 0;
-      a {
-        color: white;
-        text-decoration: none;
-        .group {
-          margin-bottom: 40px;
-          &__group-name {
-            font-size: 15px;
-            margin-bottom: 5px;
-          }
-          &__latest-message {
-            font-size: 11px;
-          }
+      .group {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        margin-bottom: 40px;
+        &__group-name {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__latest-message {
+          font-size: 11px;
         }
       }
     }
