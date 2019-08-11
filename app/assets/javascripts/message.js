@@ -30,8 +30,9 @@ $(document).on('turbolinks:load', function(){
       var html = buildHTML(data)
       $('.messages').append(html)
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
-      $('.form__message').val('');
-      $('#message_image').val('');
+      $('.new_message')[0].reset();
+      // document.form_message.reset();
+      $('.new_message')[0].reset();
       $('.form__submit').prop('disabled', false)
     })
     .fail(function(){
