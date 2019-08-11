@@ -26,12 +26,10 @@ $(document).on('turbolinks:load', function(){
       contentType: false
     })
     .done(function(data){
-      console.log(data)
       var html = buildHTML(data)
       $('.messages').append(html)
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
       $('.new_message')[0].reset();
-      // document.form_message.reset();
       $('.new_message')[0].reset();
       $('.form__submit').prop('disabled', false)
     })
