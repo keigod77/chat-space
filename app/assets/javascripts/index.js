@@ -56,7 +56,6 @@ function innerHTML(id, name){
   $(document).on("click", '.chat-group-user__btn--add', function(){
     var user_id = $(this).attr('data-user-id')
     let user_name = $(this).attr('data-user-name')
-    console.log(user_id)
     var html = innerHTML(user_id, user_name)
     $("#chat-group-users").append(html)
     $(this).parent().remove()
