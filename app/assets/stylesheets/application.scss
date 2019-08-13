@@ -81,6 +81,9 @@
           display: flex;
           font-size: 12px;
           color: #999;
+          &__member{
+            margin-left: 5px;
+          }
         }
       }
       a {
