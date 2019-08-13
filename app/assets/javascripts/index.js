@@ -43,6 +43,10 @@ function appenErrMsgToHTML(){
       alert('ユーザー検索に失敗しました');
     });
   });
+  $(".chat-group-form__action-btn").on("click", function(){
+    $("#user-search-field").val('')
+  })
+});
 
 
 function innerHTML(id, name){
@@ -53,6 +57,8 @@ function innerHTML(id, name){
           </div>`
   return html;
 }
+
+$(document).on('ready page:load', function() {
   $(document).on("click", '.chat-group-user__btn--add', function(){
     var user_id = $(this).attr('data-user-id')
     let user_name = $(this).attr('data-user-name')
@@ -64,8 +70,5 @@ function innerHTML(id, name){
   $(document).on('click', '.chat-group-user__btn--remove', function(){
     $(this).parent().remove()
   })
-
-  $(".chat-group-form__action-btn").on("click", function(){
-    $("#user-search-field").val('')
-  })
 });
+
