@@ -46,9 +46,6 @@ $(document).on('turbolinks:load', function(){
       data: {last_id: last_message_id}
     })
     .done(function(messages){
-      console.log(last_message_id);
-      console.log(messages);
-      
       for (var i = 0 ; i < messages.length; i++){
         var html = buildHTML(messages[i]);
         $('.messages').append(html);
