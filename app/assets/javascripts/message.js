@@ -49,8 +49,9 @@ $(document).on('turbolinks:load', function(){
       for (var i = 0 ; i < messages.length; i++){
         var html = buildHTML(messages[i]);
         $('.messages').append(html);
-      };
         $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
+      };
+        
     })
     .fail(function(){
       console.log('error');
