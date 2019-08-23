@@ -86,17 +86,17 @@
           }
         }
       }
-      a {
-        color: skyblue;
-        text-decoration: none;
-        &__edit-btn {
-          height: 40px;
-          line-height: 40px;
-          padding: 0 20px;
-          margin-top: 28px;
-          border: solid 1px $waterblue;
-        }
+      &__edit-btn {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 28px;
+        border: solid 1px $waterblue;
       }
+    a {
+      color: skyblue;
+      text-decoration: none;
+    }
     }
   }
 
