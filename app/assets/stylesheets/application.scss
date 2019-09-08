@@ -18,6 +18,7 @@
     width: 300px;
     color: white;
     float: left;
+    
     .side-header {
       background-color: #253141;
       height: 100px;
@@ -104,7 +105,7 @@
       height: calc(100vh - 280px);
       padding: 46px 40px;
       background-color: #fafafa;
-      overflow: scroll;
+      overflow: auto;
       .message {
         padding-bottom: 40px;
         &__upper-info {
