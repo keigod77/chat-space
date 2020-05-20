@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
     @message = Message.new
     @messages = @group.messages.includes(:user)
   end
-
+１
   def create
     @message = Message.create(message_params)
     respond_to do |format|

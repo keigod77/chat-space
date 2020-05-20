@@ -8,8 +8,6 @@
 | name | string | null :false |
 | email | string | null :false |
 | password | string | null :false |
-
-
 ### Assoiation
 - has_many :groups, through: :members
 - has_many :members
@@ -20,7 +18,6 @@
 | Column | Type | Options |
 | ------ | ---- | ------- |
 | name | string | null :false |
-
 ### Assoiation
 - has_many :users, through: :members
 - has_many :members
@@ -32,7 +29,6 @@
 | ------ | ---- | ------- |
 | user | references | null: false, foreign_key: true |
 | group | references | null: false, foreign_key: true |
-
 ### Assoiation
 - belongs_to :group
 - belongs_to :user
@@ -44,7 +40,6 @@
 | image | string | |
 | user | references | null: false, foreign_key: true |
 | group | references | null: false, foreign_key: true |
-
 ### Assoiation
 - belongs_to :user
 - belongs_to :group
